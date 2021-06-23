@@ -5,4 +5,4 @@ Para rodar os testes unitários baixe o código na maquina. No prompt de comando
 Observacao não é preciso ter o maven instalado na maquina pois exxiste o wrapper do maven dentro do projeto
 
 Para ver o resultado dos testes basta executar o seguinte comando apos executar o primeiro comando:
-start target\jacoco-ut\index.html
+start target\site\jacoco\index.html
