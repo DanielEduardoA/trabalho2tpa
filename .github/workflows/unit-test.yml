@@ -1,0 +1,22 @@
+name: Unit Test - Java
+
+on: [push, pull_request]
+jobs:
+ test:
+   runs-on: ubuntu-latest
+   
+   steps:
+     - name: checkout project
+       uses: actions/checkout@v2
+
+     - name: set up java version
+       uses: actions/setup-java@v2
+       with:
+         java-version: '11'
+         distribution: 'adopt'
+    
+     - name: run Unit Test with Maven
+       run: mvn --batch-mode --update-snapshots test
+      
+     
+     
